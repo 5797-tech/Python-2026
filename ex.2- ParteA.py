@@ -1,33 +1,50 @@
+# Lista de letras
+letras = ["A", "B", "C", "D"]
+
 # Lista de números
 numeros = [10, 20, 30, 40]
 
-print("Lista:", numeros)
+print("Lista de letras:", letras)
+print("Lista de números:", numeros)
 
 # Indexação
-print("Primeiro:", numeros[0])
-print("Último:", numeros[-1])
+print("Primeira letra:", letras[0])
+print("Último número:", numeros[-1])
 
 # Fatiamento
-print("Do meio:", numeros[1:3])
+print("Letras do meio:", letras[1:3])
+print("Primeiros 3 números:", numeros[:3])
 
 # Concatenação
+letras = letras + ["E", "F"]
 numeros = numeros + [50, 60]
-print("Nova lista:", numeros)
 
-# Alterar um valor
-numeros[2] = 35
-print("Alterada:", numeros)
+print("Letras atualizadas:", letras)
+print("Números atualizados:", numeros)
 
-# Adicionar um valor
+# Alterar valores
+letras[2] = "Z"
+numeros[1] = 25
+
+print("Letras alteradas:", letras)
+print("Números alterados:", numeros)
+
+# Adicionar novos elementos
+letras.append("G")
 numeros.append(70)
-print("Com append:", numeros)
 
-# Tamanho da lista
-print("Quantidade:", len(numeros))
+print("Letras com append:", letras)
+print("Números com append:", numeros)
+
+# Tamanho das listas
+print("Total de letras:", len(letras))
+print("Total de números:", len(numeros))
 
 # Lista aninhada
-pares = [2, 4, 6]
-listas = [numeros, pares]
+dados = [letras, numeros]
 
-print("Lista aninhada:", listas)
-print("Primeiro número da segunda lista:", listas[1][0])
+print("Lista aninhada:", dados)
+
+# Aceder a elementos da lista aninhada
+print("Primeira letra:", dados[0][0])
+print("Terceiro número:", dados[1][2])
